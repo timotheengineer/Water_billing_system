@@ -1,7 +1,7 @@
-#include<iostream>
+#include<iostream> //library for the input out 
 #include<stdlib.h>
 #include<stdio.h>
-#include<math.h>
+#include<math.h> //library for mathematical manipulations
 #include<ctype.h>
 #include<stdarg.h>
 #include<stddef.h>
@@ -11,7 +11,7 @@ using namespace std;
 
 void temp_file_clear();//for clearing temp file
 void copy_content(string a,string b); //global declaration
-void number_system_put(int n1);//
+void number_system_put(int n1);//function that takes one variable
 int number_system_get();//account number automation 
 void user_menu(int);
 void clrscr();
@@ -29,7 +29,7 @@ class manual
 		void userguide();
 		
 };
-void manual::userguide()
+void manual::userguide() //declaring member function outside the class
 {
 	cout<<string(26, '*');
 	cout<<" \n * Water Billing system *\n";
@@ -53,7 +53,7 @@ class user
 {
 	public:
 	
-	char fname[10],lname[10];
+	char fname[10],lname[10];//name of the user
 	string phone;
 	string ID;
 
